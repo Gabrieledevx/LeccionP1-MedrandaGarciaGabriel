@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.custom-form-field .mat-form-field-background {
+  background-color: white;
+}
+
+.custom-card {
+  background-color: white;
+  color: black;
+}
+
+.custom-form-field {
+  background-color: white;
+}
+
+.custom-form-field input {
+  color: black;
+}
+
+.custom-form-field mat-datepicker-toggle button {
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button-container button {
+  margin-right: 10px;
+}

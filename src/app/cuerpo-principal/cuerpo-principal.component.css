@@ -1,0 +1,29 @@
+.custom-card {
+    background-color: white;
+    color: black;
+  }
+  
+  .custom-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .custom-form-field input {
+    color: black;
+  }
+  
+  .custom-form-field mat-datepicker-toggle button {
+    color: black;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    margin-right: 10px;
+  }
+  

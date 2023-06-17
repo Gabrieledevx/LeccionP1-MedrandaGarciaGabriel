@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  mat-card {
+    width: 500px;
+    text-align: left;
+  }
+  
+  .login-form {
+    margin-bottom: 20px;
+  }
+  
+  .wide-input {
+    width: 100%;
+  }
+  

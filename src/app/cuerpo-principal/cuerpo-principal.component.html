@@ -1,0 +1,86 @@
+<div class="container mt-5">
+
+  <div class="card">
+      <div class="card-body">
+          <h3 style="text-align: center;">Registro de estudiante</h3>
+          <form [formGroup]="form" (ngSubmit)="agregarPersona()" >
+              
+              <h5 style="height: 30px;">Datos personales</h5>
+              <div class="row">
+                  <div class="col-lg-3">
+                      <div class="form-group">
+                          <label for="cedula">Cédula:</label>
+                          <input type="text" formControlName="cedula" class="form-control form-control-lg"
+                              maxlength="10" minlength="10" required pattern="[0-9]+">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-3">
+                      <div class="form-group">
+                          <label for="nombre">Nombres:</label>
+                          <input type="text" formControlName="nombre" class="form-control form-control-lg">
+                      </div>
+                      
+                  </div>
+
+                  <div class="col-lg-3">
+                      <div class="form-group">
+                          <label for="nombre">Apellidos:</label>
+                          <input type="text" formControlName="apellido" class="form-control form-control-lg">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                      <div class="form-group">
+                          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                          <input type="date" formControlName="fechaNacimiento" class="form-control form-control-lg"
+                              id="fechaNacimiento">
+                      </div>
+                  </div>
+                  
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-3">
+                      <div class="form-group">
+                          <label for="sexo">Sexo:</label>
+                          <select formControlName="sexo" class="form-control form-control-lg">
+                              <option value="">Seleccionar</option>
+                              <option value="masculino">Masculino</option>
+                              <option value="femenino">Femenino</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+
+              <h5 style="margin-top: 20px;">Datos de calificaciones</h5>
+              <div class="row">
+                  <div class="col-lg-3">
+                      <div class="form-group">
+                          <label for="notauno">Sueldo</label>
+                          <input type="text" formControlName="notauno" class="form-control form-control-lg">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                      <div class="form-group">
+                          <label for="notados">Propinas</label>
+                          <input type="text" formControlName="notados" class="form-control form-control-lg">
+                      </div>
+                  </div>
+
+              </div>
+              <div class="col-lg-3">
+                  <div class="form-group mt-4">
+                      <button type="submit" class="btn btn-primary btn-lg" (personaAgregada)="agregarPersona()">Agregar
+                          <i class="bi bi-person-plus-fill"></i>
+                      </button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+
+</div>
